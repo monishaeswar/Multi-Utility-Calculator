@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator | Multi-Utility Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="brand" href="../index.html">🧮 Multi-Utility Calculator</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="history.html">History</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="calc-header">
+                <span class="icon">🧾</span>
+                <h1>GST Calculator</h1>
+            </div>
+            <p class="calc-subtitle">Add or remove GST from an amount.</p>
+
+            <form id="gst-form">
+                <div class="two-col">
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" step="any" id="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">GST Rate (%)</label>
+                        <input type="number" step="any" id="rate" required value="18">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Mode</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="mode" value="ADD" checked> Add GST</label>
+                        <label><input type="radio" name="mode" value="REMOVE"> Remove GST</label>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit">Calculate</button>
+                </div>
+            </form>
+
+            <div id="result-box" class="result-box"></div>
+            <div id="error-box" class="error-box"></div>
+        </div>
+    </div>
+
+    <footer>Multi-Utility Calculator &copy; 2026</footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/gst.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | Multi-Utility Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="brand" href="../index.html">🧮 Multi-Utility Calculator</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="history.html">History</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="calc-header">
+                <span class="icon">⚖️</span>
+                <h1>BMI Calculator</h1>
+            </div>
+            <p class="calc-subtitle">Calculate your Body Mass Index and category.</p>
+
+            <form id="bmi-form">
+                <div class="two-col">
+                    <div class="form-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" step="any" id="height" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" step="any" id="weight" required>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit">Calculate</button>
+                </div>
+            </form>
+
+            <div id="result-box" class="result-box"></div>
+            <div id="error-box" class="error-box"></div>
+        </div>
+    </div>
+
+    <footer>Multi-Utility Calculator &copy; 2026</footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/bmi.js"></script>
+</body>
+</html>

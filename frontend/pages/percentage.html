@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator | Multi-Utility Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="brand" href="../index.html">🧮 Multi-Utility Calculator</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="history.html">History</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="calc-header">
+                <span class="icon">%</span>
+                <h1>Percentage Calculator</h1>
+            </div>
+            <p class="calc-subtitle">Calculate percentages, percentage change, and ratios.</p>
+
+            <form id="percentage-form">
+                <div class="form-group">
+                    <label for="mode">Calculation Type</label>
+                    <select id="mode" required>
+                        <option value="OF">What is X% of a value?</option>
+                        <option value="CHANGE">Percentage change (value → new value)</option>
+                        <option value="IS_WHAT_PERCENT">Value is what % of another value?</option>
+                    </select>
+                </div>
+
+                <div class="two-col">
+                    <div class="form-group">
+                        <label for="value">Value</label>
+                        <input type="number" step="any" id="value" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="percent">Percent / New Value / Of-Value</label>
+                        <input type="number" step="any" id="percent" required>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit">Calculate</button>
+                </div>
+            </form>
+
+            <div id="result-box" class="result-box"></div>
+            <div id="error-box" class="error-box"></div>
+        </div>
+    </div>
+
+    <footer>Multi-Utility Calculator &copy; 2026</footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/percentage.js"></script>
+</body>
+</html>

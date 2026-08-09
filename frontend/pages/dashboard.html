@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <header class="dashboard-header">
+        <div>
+            <h1>🧮 Multi-Utility Calculator</h1>
+            <p>Smart calculations in one place</p>
+        </div>
+
+        <a href="../index.html" class="home-btn">
+            Calculator Home
+        </a>
+    </header>
+
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-icon">📊</div>
+            <div>
+                <h3>Total Calculations</h3>
+                <p id="total-calculations">0</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">🏦</div>
+            <div>
+                <h3>EMI Calculations</h3>
+                <p id="emi-count">0</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">🧍</div>
+            <div>
+                <h3>BMI Calculations</h3>
+                <p id="bmi-count">0</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">💰</div>
+            <div>
+                <h3>Financial Calculations</h3>
+                <p id="financial-count">0</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-section">
+
+        <div class="section-header">
+            <h2>Quick Calculators</h2>
+            <a href="history.html">View History →</a>
+        </div>
+
+
+        <div class="calculator-grid">
+
+            <a href="basic.html" class="calculator-card">
+                <span>➕</span>
+                <h3>Basic</h3>
+                <p>Arithmetic calculations</p>
+            </a>
+
+            <a href="emi.html" class="calculator-card">
+                <span>🏦</span>
+                <h3>EMI</h3>
+                <p>Loan and interest calculation</p>
+            </a>
+
+            <a href="bmi.html" class="calculator-card">
+                <span>🧍</span>
+                <h3>BMI</h3>
+                <p>Body mass index</p>
+            </a>
+
+            <a href="gst.html" class="calculator-card">
+                <span>💰</span>
+                <h3>GST</h3>
+                <p>GST amount calculation</p>
+            </a>
+
+            <a href="discount.html" class="calculator-card">
+                <span>🏷️</span>
+                <h3>Discount</h3>
+                <p>Discount and final price</p>
+            </a>
+
+            <a href="percentage.html" class="calculator-card">
+                <span>📈</span>
+                <h3>Percentage</h3>
+                <p>Percentage calculations</p>
+            </a>
+
+            <a href="age.html" class="calculator-card">
+                <span>🎂</span>
+                <h3>Age</h3>
+                <p>Age and date calculation</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-section">
+
+        <div class="section-header">
+            <h2>Recent Calculations</h2>
+            <a href="history.html">View All →</a>
+        </div>
+
+        <div id="recent-calculations" class="recent-list">
+            <p class="loading">Loading...</p>
+        </div>
+
+    </section>
+
+</div>
+
+
+<footer>
+    Multi-Utility Calculator &copy; 2026
+</footer>
+
+
+<script src="../js/api.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>
