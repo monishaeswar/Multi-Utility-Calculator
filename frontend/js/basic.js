@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorBox = document.getElementById('error-box');
 
     form.addEventListener('submit', async (e) => {
-        e.preventDefault();
+        e.preventDefault(); // <-- THIS PREVENTS THE PAGE FROM REFRESHING!
+
         hideBox(resultBox);
         hideBox(errorBox);
 
@@ -20,4 +21,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-fetch(`${API_BASE_URL}/basic/calculate`, { ... })
