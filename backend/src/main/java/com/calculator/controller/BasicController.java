@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
+
 @RestController
 @RequestMapping("/api/basic")
-@CrossOrigin(origins = "*")
 @Tag(name = "Basic Calculator", description = "Basic arithmetic operations")
 public class BasicController {
 

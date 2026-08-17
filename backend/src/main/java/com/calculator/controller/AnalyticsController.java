@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+
 @RestController
 @RequestMapping("/api/analytics")
-@CrossOrigin(origins = "*")
 @Tag(name = "Analytics", description = "Calculation analytics and statistics")
 public class AnalyticsController {
 
