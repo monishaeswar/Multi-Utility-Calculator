@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+fetch(`${API_BASE_URL}/basic/calculate`, { ... })

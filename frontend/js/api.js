@@ -1,8 +1,7 @@
 /**
  * Shared API client for the Multi-Utility Calculator frontend.
- * Adjust API_BASE_URL if the backend runs on a different host/port.
  */
-const API_BASE_URL = 'https://multi-utility-calculator.onrender.com';
+const API_BASE_URL = "https://multi-utility-calculator.onrender.com/api";
 
 async function apiPost(path, body) {
     const res = await fetch(`${API_BASE_URL}${path}`, {
@@ -55,3 +54,11 @@ function hideBox(boxEl) {
     boxEl.classList.remove('show');
     boxEl.innerHTML = '';
 }
+
+// Ensure all functions are exposed globally for your basic.js, age.js, etc.
+window.apiPost = apiPost;
+window.apiGet = apiGet;
+window.apiDelete = apiDelete;
+window.showResult = showResult;
+window.showError = showError;
+window.hideBox = hideBox;
