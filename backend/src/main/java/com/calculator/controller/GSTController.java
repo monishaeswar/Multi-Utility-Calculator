@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/gst")
+@CrossOrigin(origins = "*")
 @Tag(name = "GST Calculator", description = "Add or remove GST from an amount")
 public class GSTController {
 

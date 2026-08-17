@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/discount")
+@CrossOrigin(origins = "*")
 @Tag(name = "Discount Calculator", description = "Final price and savings after a discount")
 public class DiscountController {
 

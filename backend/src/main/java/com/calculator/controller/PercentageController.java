@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/percentage")
+@CrossOrigin(origins = "*")
 @Tag(name = "Percentage Calculator", description = "Percentage of value, percentage change, and reverse percentage")
 public class PercentageController {
 

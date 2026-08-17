@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/emi")
+@CrossOrigin(origins = "*")
 @Tag(name = "EMI Calculator", description = "Loan EMI calculation")
 public class EMIController {
 

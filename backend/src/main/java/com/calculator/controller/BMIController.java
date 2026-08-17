@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/bmi")
+@CrossOrigin(origins = "*")
 @Tag(name = "BMI Calculator", description = "Body Mass Index calculation")
 public class BMIController {
 

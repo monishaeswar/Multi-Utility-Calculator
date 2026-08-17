@@ -2,7 +2,7 @@
  * Shared API client for the Multi-Utility Calculator frontend.
  * Adjust API_BASE_URL if the backend runs on a different host/port.
  */
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://multi-utility-calculator.onrender.com';
 
 async function apiPost(path, body) {
     const res = await fetch(`${API_BASE_URL}${path}`, {

@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/history")
+@CrossOrigin(origins = "*")
 @Tag(name = "History", description = "View and manage calculation history")
 public class HistoryController {
 

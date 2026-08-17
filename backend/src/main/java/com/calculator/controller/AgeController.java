@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/age")
+@CrossOrigin(origins = "*")
 @Tag(name = "Age Calculator", description = "Calculate exact age from date of birth")
 public class AgeController {
 
