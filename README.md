@@ -9,13 +9,10 @@ This project was developed as a **mini project** to gain practical experience in
 ## 🚀 Live Application
 
 **Frontend:**
-[Add your Vercel URL here]
-
-**Backend API:**
-[Add your Render backend URL here]
+https://multi-utility-calculator.vercel.app/
 
 **GitHub Repository:**
-[Add your GitHub repository URL here]
+https://github.com/monishaeswar/Multi-Utility-Calculator
 
 ---
 
