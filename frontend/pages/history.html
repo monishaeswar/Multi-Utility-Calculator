@@ -3,28 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>History | Multi-Utility Calculator</title>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/calculator.css">
 </head>
+
 <body>
+
+    <!-- ================= NAVBAR ================= -->
     <div class="navbar">
-        <a class="brand" href="../index.html">🧮 Multi-Utility Calculator</a>
+
+        <a class="brand" href="../index.html">
+            🧮 Multi-Utility Calculator
+        </a>
+
         <nav>
             <a href="../index.html">Home</a>
             <a href="history.html" class="active">History</a>
         </nav>
+
     </div>
 
-    <div class="container">
-        <div class="card">
-            <div class="calc-header">
-                <span class="icon">🕘</span>
-                <h1>Calculation History</h1>
-            </div>
-            <p class="calc-subtitle">Review, filter, and manage your past calculations.</p>
 
-            <div class="filter-bar">
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+
+        <section class="history-card">
+
+            <!-- History Header -->
+            <div class="history-header">
+
+                <h1 class="history-title">
+                    <span class="history-icon">🕘</span>
+                    Calculation History
+                </h1>
+
+                <p class="history-subtitle">
+                    Review, filter, and manage your past calculations.
+                </p>
+
+            </div>
+
+
+            <!-- Filter Controls -->
+            <div class="history-controls">
+
                 <select id="filter-type">
                     <option value="">All Types</option>
                     <option value="BASIC">Basic</option>
@@ -35,33 +60,80 @@
                     <option value="PERCENTAGE">Percentage</option>
                     <option value="DISCOUNT">Discount</option>
                 </select>
-                <button id="clear-all-btn" class="secondary">Clear All History</button>
+
+                <button
+                    type="button"
+                    id="clear-all-btn"
+                    class="clear-history-btn">
+                    Clear All History
+                </button>
+
             </div>
 
-            <table class="history-table">
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Input</th>
-                        <th>Result</th>
-                        <th>Date</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="history-body"></tbody>
-            </table>
 
-            <div id="empty-state" class="empty-state" style="display:none;">
-                No calculations yet. Try one of the calculators!
+            <!-- History Table -->
+            <div class="history-table-wrapper">
+
+                <table class="history-table">
+
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Input</th>
+                            <th>Result</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="history-body">
+                        <!-- history.js inserts rows here -->
+                    </tbody>
+
+                </table>
+
             </div>
 
-            <div id="error-box" class="error-box"></div>
-        </div>
-    </div>
 
-    <footer>Multi-Utility Calculator &copy; 2026</footer>
+            <!-- Empty State -->
+            <div
+                id="empty-state"
+                class="empty-history"
+                style="display: none;">
 
+                <div class="empty-history-icon">
+                    🕘
+                </div>
+
+                <h3>No calculations yet</h3>
+
+                <p>
+                    Try one of the calculators to see your history here.
+                </p>
+
+            </div>
+
+
+            <!-- Error -->
+            <div
+                id="error-box"
+                class="error-box">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        Multi-Utility Calculator &copy; 2026
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
     <script src="../js/api.js"></script>
     <script src="../js/history.js"></script>
+
 </body>
 </html>
